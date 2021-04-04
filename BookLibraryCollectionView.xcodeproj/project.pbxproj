@@ -3,26 +3,30 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		250DD3E8260E95E900A3ECEF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 250DD3E7260E95E900A3ECEF /* AppDelegate.swift */; };
 		250DD3EA260E95E900A3ECEF /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 250DD3E9260E95E900A3ECEF /* SceneDelegate.swift */; };
-		250DD3EC260E95E900A3ECEF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 250DD3EB260E95E900A3ECEF /* ViewController.swift */; };
+		250DD3EC260E95E900A3ECEF /* LibraryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 250DD3EB260E95E900A3ECEF /* LibraryViewController.swift */; };
 		250DD3EF260E95E900A3ECEF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 250DD3ED260E95E900A3ECEF /* Main.storyboard */; };
 		250DD3F1260E95EC00A3ECEF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 250DD3F0260E95EC00A3ECEF /* Assets.xcassets */; };
 		250DD3F4260E95EC00A3ECEF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 250DD3F2260E95EC00A3ECEF /* LaunchScreen.storyboard */; };
 		250DD3FD260E964C00A3ECEF /* books.json in Resources */ = {isa = PBXBuildFile; fileRef = 250DD3FC260E964C00A3ECEF /* books.json */; };
 		250DD400260E972900A3ECEF /* Library.swift in Sources */ = {isa = PBXBuildFile; fileRef = 250DD3FF260E972900A3ECEF /* Library.swift */; };
 		250DD403260E976700A3ECEF /* Book.swift in Sources */ = {isa = PBXBuildFile; fileRef = 250DD402260E976700A3ECEF /* Book.swift */; };
+		250DD408260E9AF600A3ECEF /* BookCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 250DD406260E9AF600A3ECEF /* BookCell.swift */; };
+		250DD409260E9AF600A3ECEF /* BookCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 250DD407260E9AF600A3ECEF /* BookCell.xib */; };
+		25AC81A5260EA7F7004C6BAC /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25AC81A4260EA7F7004C6BAC /* Extensions.swift */; };
+		25AC81A9260EB612004C6BAC /* Nuke in Frameworks */ = {isa = PBXBuildFile; productRef = 25AC81A8260EB612004C6BAC /* Nuke */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		250DD3E4260E95E900A3ECEF /* BookLibraryCollectionView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BookLibraryCollectionView.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		250DD3E7260E95E900A3ECEF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		250DD3E9260E95E900A3ECEF /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		250DD3EB260E95E900A3ECEF /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		250DD3EB260E95E900A3ECEF /* LibraryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LibraryViewController.swift; sourceTree = "<group>"; };
 		250DD3EE260E95E900A3ECEF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		250DD3F0260E95EC00A3ECEF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		250DD3F3260E95EC00A3ECEF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -30,6 +34,9 @@
 		250DD3FC260E964C00A3ECEF /* books.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = books.json; sourceTree = "<group>"; };
 		250DD3FF260E972900A3ECEF /* Library.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Library.swift; sourceTree = "<group>"; };
 		250DD402260E976700A3ECEF /* Book.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Book.swift; sourceTree = "<group>"; };
+		250DD406260E9AF600A3ECEF /* BookCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookCell.swift; sourceTree = "<group>"; };
+		250DD407260E9AF600A3ECEF /* BookCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BookCell.xib; sourceTree = "<group>"; };
+		25AC81A4260EA7F7004C6BAC /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -37,6 +44,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				25AC81A9260EB612004C6BAC /* Nuke in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -62,18 +70,29 @@
 		250DD3E6260E95E900A3ECEF /* BookLibraryCollectionView */ = {
 			isa = PBXGroup;
 			children = (
+				250DD40C260E9C5D00A3ECEF /* View */,
 				250DD3E7260E95E900A3ECEF /* AppDelegate.swift */,
+				25AC81A4260EA7F7004C6BAC /* Extensions.swift */,
+				250DD3FF260E972900A3ECEF /* Library.swift */,
+				250DD402260E976700A3ECEF /* Book.swift */,
 				250DD3E9260E95E900A3ECEF /* SceneDelegate.swift */,
-				250DD3EB260E95E900A3ECEF /* ViewController.swift */,
+				250DD3EB260E95E900A3ECEF /* LibraryViewController.swift */,
 				250DD3ED260E95E900A3ECEF /* Main.storyboard */,
+				250DD406260E9AF600A3ECEF /* BookCell.swift */,
+				250DD407260E9AF600A3ECEF /* BookCell.xib */,
 				250DD3F0260E95EC00A3ECEF /* Assets.xcassets */,
 				250DD3F2260E95EC00A3ECEF /* LaunchScreen.storyboard */,
 				250DD3FC260E964C00A3ECEF /* books.json */,
 				250DD3F5260E95EC00A3ECEF /* Info.plist */,
-				250DD3FF260E972900A3ECEF /* Library.swift */,
-				250DD402260E976700A3ECEF /* Book.swift */,
 			);
 			path = BookLibraryCollectionView;
+			sourceTree = "<group>";
+		};
+		250DD40C260E9C5D00A3ECEF /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -92,6 +111,9 @@
 			dependencies = (
 			);
 			name = BookLibraryCollectionView;
+			packageProductDependencies = (
+				25AC81A8260EB612004C6BAC /* Nuke */,
+			);
 			productName = BookLibraryCollectionView;
 			productReference = 250DD3E4260E95E900A3ECEF /* BookLibraryCollectionView.app */;
 			productType = "com.apple.product-type.application";
@@ -119,6 +141,9 @@
 				Base,
 			);
 			mainGroup = 250DD3DB260E95E900A3ECEF;
+			packageReferences = (
+				25AC81A7260EB612004C6BAC /* XCRemoteSwiftPackageReference "Nuke" */,
+			);
 			productRefGroup = 250DD3E5260E95E900A3ECEF /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -137,6 +162,7 @@
 				250DD3F4260E95EC00A3ECEF /* LaunchScreen.storyboard in Resources */,
 				250DD3F1260E95EC00A3ECEF /* Assets.xcassets in Resources */,
 				250DD3EF260E95E900A3ECEF /* Main.storyboard in Resources */,
+				250DD409260E9AF600A3ECEF /* BookCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -147,11 +173,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				250DD3EC260E95E900A3ECEF /* ViewController.swift in Sources */,
+				250DD3EC260E95E900A3ECEF /* LibraryViewController.swift in Sources */,
 				250DD400260E972900A3ECEF /* Library.swift in Sources */,
 				250DD3E8260E95E900A3ECEF /* AppDelegate.swift in Sources */,
 				250DD403260E976700A3ECEF /* Book.swift in Sources */,
+				250DD408260E9AF600A3ECEF /* BookCell.swift in Sources */,
 				250DD3EA260E95E900A3ECEF /* SceneDelegate.swift in Sources */,
+				25AC81A5260EA7F7004C6BAC /* Extensions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -353,6 +381,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		25AC81A7260EB612004C6BAC /* XCRemoteSwiftPackageReference "Nuke" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/kean/Nuke";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 9.3.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		25AC81A8260EB612004C6BAC /* Nuke */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 25AC81A7260EB612004C6BAC /* XCRemoteSwiftPackageReference "Nuke" */;
+			productName = Nuke;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 250DD3DC260E95E900A3ECEF /* Project object */;
 }
