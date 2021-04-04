@@ -12,6 +12,7 @@ class LibraryViewController: UIViewController {
 
     let reuseIdentifierCollectionCell = "BookCell"
     let preheater = ImagePreheater()
+    var cellSize : CGFloat = 0
     @IBOutlet weak var collectionView: UICollectionView!
     
 
@@ -38,7 +39,7 @@ extension LibraryViewController: UICollectionViewDataSource {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: reuseIdentifierCollectionCell, for: indexPath) as! BookCell
 
         let book = Library.shared.books[indexPath.row]
-        cell.configure(book: book)
+        cell.configure(book: book, cellSize: cellSize)
 
         return cell
     }
@@ -56,6 +57,7 @@ extension LibraryViewController: UICollectionViewDelegateFlowLayout {
         let spacing: CGFloat = 10
         let availableWidth = screenWidth - (verticalInset * 2) - (spacing * (columns - 1))
         let cellWidth = floor(availableWidth / columns)
+        cellSize = cellWidth
         let cellHeight: CGFloat = 160
         print("screen width: \(screenWidth)")
         print("cell width: \(cellWidth)")
