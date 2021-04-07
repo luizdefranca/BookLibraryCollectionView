@@ -18,9 +18,11 @@
 		250DD403260E976700A3ECEF /* Book.swift in Sources */ = {isa = PBXBuildFile; fileRef = 250DD402260E976700A3ECEF /* Book.swift */; };
 		250DD408260E9AF600A3ECEF /* BookCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 250DD406260E9AF600A3ECEF /* BookCell.swift */; };
 		250DD409260E9AF600A3ECEF /* BookCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 250DD407260E9AF600A3ECEF /* BookCell.xib */; };
+		2531B87E261D1EE400F744A3 /* unlocking android.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 2531B87D261D1EE300F744A3 /* unlocking android.jpeg */; };
 		25923D3B261A36C800955469 /* BookLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25923D3A261A36C800955469 /* BookLoader.swift */; };
 		25923D40261A469C00955469 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25923D3F261A469C00955469 /* User.swift */; };
 		25923D43261A46F100955469 /* Request.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25923D42261A46F100955469 /* Request.swift */; };
+		25923D46261A7A1C00955469 /* BookDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25923D45261A7A1C00955469 /* BookDetailViewController.swift */; };
 		25AC81A5260EA7F7004C6BAC /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25AC81A4260EA7F7004C6BAC /* Extensions.swift */; };
 		25AC81A9260EB612004C6BAC /* Nuke in Frameworks */ = {isa = PBXBuildFile; productRef = 25AC81A8260EB612004C6BAC /* Nuke */; };
 /* End PBXBuildFile section */
@@ -39,9 +41,11 @@
 		250DD402260E976700A3ECEF /* Book.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Book.swift; sourceTree = "<group>"; };
 		250DD406260E9AF600A3ECEF /* BookCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookCell.swift; sourceTree = "<group>"; };
 		250DD407260E9AF600A3ECEF /* BookCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BookCell.xib; sourceTree = "<group>"; };
+		2531B87D261D1EE300F744A3 /* unlocking android.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "unlocking android.jpeg"; sourceTree = "<group>"; };
 		25923D3A261A36C800955469 /* BookLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookLoader.swift; sourceTree = "<group>"; };
 		25923D3F261A469C00955469 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		25923D42261A46F100955469 /* Request.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Request.swift; sourceTree = "<group>"; };
+		25923D45261A7A1C00955469 /* BookDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookDetailViewController.swift; sourceTree = "<group>"; };
 		25AC81A4260EA7F7004C6BAC /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -81,6 +85,7 @@
 				250DD40C260E9C5D00A3ECEF /* View */,
 				250DD3E7260E95E900A3ECEF /* AppDelegate.swift */,
 				250DD3ED260E95E900A3ECEF /* Main.storyboard */,
+				2531B87D261D1EE300F744A3 /* unlocking android.jpeg */,
 				250DD3F2260E95EC00A3ECEF /* LaunchScreen.storyboard */,
 				25AC81A4260EA7F7004C6BAC /* Extensions.swift */,
 				25923D3A261A36C800955469 /* BookLoader.swift */,
@@ -105,6 +110,7 @@
 			isa = PBXGroup;
 			children = (
 				250DD3EB260E95E900A3ECEF /* LibraryViewController.swift */,
+				25923D45261A7A1C00955469 /* BookDetailViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -188,6 +194,7 @@
 				250DD3F1260E95EC00A3ECEF /* Assets.xcassets in Resources */,
 				250DD3EF260E95E900A3ECEF /* Main.storyboard in Resources */,
 				250DD409260E9AF600A3ECEF /* BookCell.xib in Resources */,
+				2531B87E261D1EE400F744A3 /* unlocking android.jpeg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -202,6 +209,7 @@
 				250DD400260E972900A3ECEF /* Library.swift in Sources */,
 				250DD3E8260E95E900A3ECEF /* AppDelegate.swift in Sources */,
 				250DD403260E976700A3ECEF /* Book.swift in Sources */,
+				25923D46261A7A1C00955469 /* BookDetailViewController.swift in Sources */,
 				250DD408260E9AF600A3ECEF /* BookCell.swift in Sources */,
 				25923D40261A469C00955469 /* User.swift in Sources */,
 				25923D3B261A36C800955469 /* BookLoader.swift in Sources */,

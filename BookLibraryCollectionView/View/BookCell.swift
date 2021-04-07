@@ -41,6 +41,7 @@ class BookCell: UICollectionViewCell {
               placeholder: UIImage(systemName: "book.circle"),
               transition: .fadeIn(duration: 0.5)
             )
+            
             Nuke.loadImage(with: request,options: options, into: imageView)
             //            imageView.load(url: url)
         }

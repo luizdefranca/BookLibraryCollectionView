@@ -13,6 +13,7 @@ class LibraryViewController: UIViewController {
     let reuseIdentifierCollectionCell = "BookCell"
     let preheater = ImagePreheater()
     var cellSize : CGFloat = 0
+    var selectedCell : IndexPath?
     @IBOutlet weak var collectionView: UICollectionView!
     
 
@@ -27,7 +28,15 @@ class LibraryViewController: UIViewController {
         collectionView.prefetchDataSource = self
     }
 
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        guard let controller = segue.destination as? BookDetailViewController,
+              let row = selectedCell?.row else {
+            return
+        }
 
+        controller.book = Library.shared.books[row]
+
+    }
 }
 
 extension LibraryViewController: UICollectionViewDataSource {
@@ -86,6 +95,14 @@ extension LibraryViewController:  UICollectionViewDataSourcePrefetching {
         preheater.stopPreheating(with: urls)
     }
 
+}
+
+extension LibraryViewController: UICollectionViewDelegate {
+
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        selectedCell = indexPath
+        performSegue(withIdentifier: "BookDetailSegue", sender: self)
+    }
 
 
 }
