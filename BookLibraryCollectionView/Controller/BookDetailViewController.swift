@@ -22,6 +22,8 @@ class BookDetailViewController: UIViewController {
 
 
     var book: Book?
+    lazy var libraryManager: LibraryManager = LibraryManager()
+    lazy var user = User.shared
     override func viewDidLoad() {
         super.viewDidLoad()
         print("______***********______")
@@ -34,7 +36,7 @@ class BookDetailViewController: UIViewController {
         labelTitle.text = "\(book.title)"
         labelISBN.text = "ISBN: \(book.isbn ?? "")"
         labelAuthor.text = "\(book.authors.joined(separator: ", "))"
-        labelDescription.text = book.shortDescription
+        labelDescription.text = book.shortDescription ?? book.longDescription
         labelCategories.text = "Categories: \(book.categories.joined(separator: ","))"
         let dateFormatter = DateFormatter()
         dateFormatter.dateStyle = .short
@@ -44,7 +46,9 @@ class BookDetailViewController: UIViewController {
     }
 
     func loadImage(imageURL: URL?, imageView: UIImageView){
+        
         imageView.image = ImageLoadingOptions.shared.placeholder
+//        imageView.image = UIImage(systemName: "book)
         imageView.contentMode = .scaleAspectFit
 
         guard let imageURL = imageURL else {
@@ -58,12 +62,25 @@ class BookDetailViewController: UIViewController {
 
           switch response {
           case .failure:
-            imageView.image = ImageLoadingOptions.shared.failureImage
+            imageView.image = ImageLoadingOptions.shared.placeholder
             imageView.contentMode = .scaleAspectFit
           case let .success(imageResponse):
             imageView.image = imageResponse.image
             imageView.contentMode = .scaleAspectFill
           }
         }
+    }
+
+    
+    @IBAction func addRequest(_ sender: UIButton) {
+        guard let book = self.book else {
+            return
+        }
+        libraryManager.lendBookBy(user: user, book: book)
+        //TODO: 
+        let alert = UIAlertController(title: "Successful Book Request!", message: nil, preferredStyle: .alert)
+        let action = UIAlertAction(title: "OK", style: .default, handler: nil)
+        alert.addAction(action)
+        present(alert, animated: true, completion: nil)
     }
 }

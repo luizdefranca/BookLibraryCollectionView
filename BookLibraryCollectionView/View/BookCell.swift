@@ -21,6 +21,8 @@ class BookCell: UICollectionViewCell {
 
     func configure(book: Book, cellSize: CGFloat){
         titleLabel.text = book.title
+        imageView.image = UIImage(systemName: "book.circle")
+        ImageLoadingOptions.shared.placeholder = UIImage(systemName: "book.circle")
         if let url = book.thumbnailUrl {
 
             var pixelSize: CGFloat {
